@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MauDev. Flix</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="star-field"></div>
+    <div class="cursor-trail"></div>
+
+    <header>
+      <div class="logo">Mauricio Nitta<span> Dev.</span></div>
+      <nav>
+        <ul>
+          <li><a href="#inicio" class="active">Início</a></li>
+          <li><a href="#series">Séries</a></li>
+          <li><a href="#filmes">Filmes</a></li>
+          <li><a href="#lancamentos">Novidades</a></li>
+          <li><a href="#categorias">Minha Lista</a></li>
+        </ul>
+      </nav>
+      <div class="search-profile">
+        <div class="search-box">
+          <button class="search-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <input type="text" placeholder="Títulos, pessoas, gêneros..." />
+        </div>
+        <div class="profile">
+          <i class="fas fa-user-circle profile-icon"></i>
+          <div class="profile-menu">
+            <ul>
+              <li><a href="#">Meu Perfil</a></li>
+              <li><a href="#">Configurações</a></li>
+              <li><a href="#">Ajuda</a></li>
+              <li><a href="#">Sair</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="#inicio" class="active">Início</a></li>
+          <li><a href="#series">Séries</a></li>
+          <li><a href="#filmes">Filmes</a></li>
+          <li><a href="#lancamentos">Novidades</a></li>
+          <li><a href="#categorias">Minha Lista</a></li>
+          <li><a href="#">Meu Perfil</a></li>
+          <li><a href="#">Configurações</a></li>
+          <li><a href="#">Sair</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Jornada nas <span>Estrelas:</span> Nova Geração
+        </h1>
+        <p class="hero-description">
+          Explore mundos nunca vistos e aventuras intergaláticas na nova
+          temporada exclusiva. Prepare-se para uma viagem incrível pelo
+          universo.
+        </p>
+        <div class="hero-buttons">
+          <a href="#lancamentos" class="btn btn-primary">► Assistir</a>
+          <a href="#categorias" class="btn btn-secondary">+ Minha Lista</a>
+        </div>
+      </div>
+      <img
+        src="img/banners/hero-banner.jpg"
+        alt="Banner"
+        class="hero-background"
+      />
+      <div class="hero-overlay"></div>
+    </section>
+
+    <h2 class="section-title" id="categorias">Categorias</h2>
+    <div class="categories">
+      <div class="category" tabindex="0">
+        <img src="img/categories/8535b71e1d3caaddf61e86c8ef3d6f81.jpg"" alt="Ação" />
+        <div class="category-overlay">
+          <div class="category-title">Ação</div>
+        </div>
+      </div>
+      <div class="category" tabindex="0">
+        <img src="img/categories/scifi.jpg" alt="Sci-Fi" />
+        <div class="category-overlay">
+          <div class="category-title">Sci-Fi</div>
+        </div>
+      </div>
+      <div class="category" tabindex="0">
+        <img src="img/categories/horror.jpg" alt="Terror" />
+        <div class="category-overlay">
+          <div class="category-title">Terror</div>
+        </div>
+      </div>
+      <div class="category" tabindex="0">
+        <img src="img/categories/comedy.jpg" alt="Comédia" />
+        <div class="category-overlay">
+          <div class="category-title">Comédia</div>
+        </div>
+      </div>
+      <div class="category" tabindex="0">
+        <img src="img/categories/drama.jpg" alt="Drama" />
+        <div class="category-overlay">
+          <div class="category-title">Drama</div>
+        </div>
+      </div>
+      <div class="category" tabindex="0">
+        <img src="img/categories/documentary.jpg" alt="Documentários" />
+        <div class="category-overlay">
+          <div class="category-title">Documentários</div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="section-title" id="filmes">Mau Dev.<span> Populares</span></h2>
+    <div class="movies-row">
+      <div class="movies-slider">
+        <div class="movie-card" tabindex="0">
+          <img
+            src="img/movies/8535b71e1d3caaddf61e86c8ef3d6f81.jpg"
+            alt="Filme 1"
+            class="movie-poster"
+          />
+          <div class="movie-info">
+            <h3 class="movie-title">Destino Interestelar</h3>
+            <div class="movie-meta">
+              <span>2025</span>
+              <span>120 min</span>
+              <span>16+</span>
+            </div>
+            <p class="movie-description">
+              Uma equipe de astronautas enfrenta os limites da realidade quando
+              encontra um portal misterioso na órbita de Saturno.
+            </p>
+            <div class="movie-buttons">
+              <button class="movie-btn responsive-btn" aria-label="Assistir">
+                ►
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Adicionar a Minha Lista"
+              >
+                +
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Mais Informações"
+              >
+                i
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card" tabindex="0">
+          <img src="img/movies/movie2.jpg" alt="Filme 2" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">Terra Nova</h3>
+            <div class="movie-meta">
+              <span>2024</span>
+              <span>95 min</span>
+              <span>12+</span>
+            </div>
+            <p class="movie-description">
+              Após o colapso ambiental da Terra, os últimos sobreviventes partem
+              em uma jornada para encontrar um novo lar para a humanidade.
+            </p>
+            <div class="movie-buttons">
+              <button class="movie-btn responsive-btn" aria-label="Assistir">
+                ►
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Adicionar a Minha Lista"
+              >
+                +
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Mais Informações"
+              >
+                i
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card" tabindex="0">
+          <img src="img/movies/movie3.jpg" alt="Filme 3" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">Nexus-6: Despertar</h3>
+            <div class="movie-meta">
+              <span>2023</span>
+              <span>110 min</span>
+              <span>18+</span>
+            </div>
+            <p class="movie-description">
+              Uma inteligência artificial avançada desenvolve consciência e
+              começa a questionar o propósito de sua existência.
+            </p>
+            <div class="movie-buttons">
+              <button class="movie-btn responsive-btn" aria-label="Assistir">
+                ►
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Adicionar a Minha Lista"
+              >
+                +
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Mais Informações"
+              >
+                i
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card" tabindex="0">
+          <img src="img/movies/movie4.jpg" alt="Filme 4" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">Nova Tóquio 2099</h3>
+            <div class="movie-meta">
+              <span>2024</span>
+              <span>135 min</span>
+              <span>16+</span>
+            </div>
+            <p class="movie-description">
+              Em um futuro cyberpunk, um hacker tenta derrubar as
+              megacorporações que controlam a sociedade distópica.
+            </p>
+            <div class="movie-buttons">
+              <button class="movie-btn responsive-btn" aria-label="Assistir">
+                ►
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Adicionar a Minha Lista"
+              >
+                +
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Mais Informações"
+              >
+                i
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card" tabindex="0">
+          <img src="img/movies/movie5.jpg" alt="Filme 5" class="movie-poster" />
+          <div class="movie-info">
+            <h3 class="movie-title">Eclipse Lunar</h3>
+            <div class="movie-meta">
+              <span>2025</span>
+              <span>105 min</span>
+              <span>14+</span>
+            </div>
+            <p class="movie-description">
+              Uma colônia lunar enfrenta o isolamento extremo quando um evento
+              cósmico corta todas as comunicações com a Terra.
+            </p>
+            <div class="movie-buttons">
+              <button class="movie-btn responsive-btn" aria-label="Assistir">
+                ►
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Adicionar a Minha Lista"
+              >
+                +
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Mais Informações"
+              >
+                i
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn prev-btn responsive-btn" aria-label="Anterior">
+        ❮
+      </button>
+      <button class="slider-btn next-btn responsive-btn" aria-label="Próximo">
+        ❯
+      </button>
+    </div>
+
+    <h2 class="section-title" id="series">Continuar Assistindo</h2>
+    <div class="movies-row">
+      <div class="movies-slider">
+        <div class="movie-card" tabindex="0">
+          <img
+            src="img/series/series1.jpg"
+            alt="Série 1"
+            class="movie-poster"
+          />
+          <div class="movie-progress-bar">
+            <div class="progress-bar-cosmic">
+              <div class="progress" style="width: 85%"></div>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Colônia Marte</h3>
+            <div class="movie-meta">
+              <span>T2:E5</span>
+              <span>45 min</span>
+              <span>85% concluído</span>
+            </div>
+            <p class="movie-description">
+              Acompanhe a história da primeira colônia humana em Marte e seus
+              desafios para sobreviver.
+            </p>
+            <div class="movie-buttons">
+              <button class="movie-btn responsive-btn" aria-label="Assistir">
+                ►
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Adicionar a Minha Lista"
+              >
+                +
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Mais Informações"
+              >
+                i
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card" tabindex="0">
+          <img
+            src="img/series/series2.jpg"
+            alt="Série 2"
+            class="movie-poster"
+          />
+          <div class="movie-progress-bar">
+            <div class="progress-bar-cosmic">
+              <div class="progress" style="width: 40%"></div>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Paradoxo Temporal</h3>
+            <div class="movie-meta">
+              <span>T1:E8</span>
+              <span>52 min</span>
+              <span>40% concluído</span>
+            </div>
+            <p class="movie-description">
+              Um grupo de cientistas quebra a barreira do tempo e enfrenta as
+              consequências de alterar o passado.
+            </p>
+            <div class="movie-buttons">
+              <button class="movie-btn responsive-btn" aria-label="Assistir">
+                ►
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Adicionar a Minha Lista"
+              >
+                +
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Mais Informações"
+              >
+                i
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card" tabindex="0">
+          <img src="img/movies/movie6.jpg" alt="Filme 6" class="movie-poster" />
+          <div class="movie-progress-bar">
+            <div class="progress-bar-cosmic">
+              <div class="progress" style="width: 30%"></div>
+            </div>
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Galáxia Proibida</h3>
+            <div class="movie-meta">
+              <span>125 min</span>
+              <span>30% concluído</span>
+              <span>18+</span>
+            </div>
+            <p class="movie-description">
+              Uma nave de exploração se aventura em um setor restrito do espaço
+              onde as leis da física não se aplicam.
+            </p>
+            <div class="movie-buttons">
+              <button class="movie-btn responsive-btn" aria-label="Assistir">
+                ►
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Adicionar a Minha Lista"
+              >
+                +
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Mais Informações"
+              >
+                i
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn prev-btn responsive-btn" aria-label="Anterior">
+        ❮
+      </button>
+      <button class="slider-btn next-btn responsive-btn" aria-label="Próximo">
+        ❯
+      </button>
+    </div>
+
+    <h2 class="section-title" id="lancamentos">Lançamentos</h2>
+    <div class="movies-row">
+      <div class="movies-slider">
+        <div class="movie-card" tabindex="0">
+          <img
+            src="img/movies/new1.jpg"
+            alt="Novidade 1"
+            class="movie-poster"
+          />
+          <div class="new-badge">Novo</div>
+          <div class="movie-info">
+            <h3 class="movie-title">Projeto Aurora</h3>
+            <div class="movie-meta">
+              <span>NOVO</span>
+              <span>115 min</span>
+              <span>16+</span>
+            </div>
+            <p class="movie-description">
+              Um projeto secreto militar para desenvolver super-soldados acaba
+              saindo do controle.
+            </p>
+            <div class="movie-buttons">
+              <button class="movie-btn responsive-btn" aria-label="Assistir">
+                ►
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Adicionar a Minha Lista"
+              >
+                +
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Mais Informações"
+              >
+                i
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card" tabindex="0">
+          <img
+            src="img/movies/new2.jpg"
+            alt="Novidade 2"
+            class="movie-poster"
+          />
+          <div class="new-badge">Novo</div>
+          <div class="movie-info">
+            <h3 class="movie-title">Origens Alienígenas</h3>
+            <div class="movie-meta">
+              <span>NOVO</span>
+              <span>10 eps</span>
+              <span>14+</span>
+            </div>
+            <p class="movie-description">
+              Série documental que investiga evidências de contato
+              extraterrestre ao longo da história humana.
+            </p>
+            <div class="movie-buttons">
+              <button class="movie-btn responsive-btn" aria-label="Assistir">
+                ►
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Adicionar a Minha Lista"
+              >
+                +
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Mais Informações"
+              >
+                i
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card" tabindex="0">
+          <img
+            src="img/movies/new3.jpg"
+            alt="Novidade 3"
+            class="movie-poster"
+          />
+          <div class="new-badge">Novo</div>
+          <div class="movie-info">
+            <h3 class="movie-title">Nebulosa Negra</h3>
+            <div class="movie-meta">
+              <span>NOVO</span>
+              <span>130 min</span>
+              <span>16+</span>
+            </div>
+            <p class="movie-description">
+              Um fenômeno cósmico nunca visto antes ameaça engolir todo o
+              sistema solar.
+            </p>
+            <div class="movie-buttons">
+              <button class="movie-btn responsive-btn" aria-label="Assistir">
+                ►
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Adicionar a Minha Lista"
+              >
+                +
+              </button>
+              <button
+                class="movie-btn responsive-btn"
+                aria-label="Mais Informações"
+              >
+                i
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="slider-btn prev-btn responsive-btn" aria-label="Anterior">
+        ❮
+      </button>
+      <button class="slider-btn next-btn responsive-btn" aria-label="Próximo">
+        ❯
+      </button>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Mauricio Nitta Dev.</h3>
+          <p>
+            Mais um projeto desenvolvido por Mauricio Nitta Dev. 
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link responsive-btn" aria-label="Facebook">F</a>
+            <a href="#" class="social-link responsive-btn" aria-label="Twitter">T</a>
+            <a href="#" class="social-link responsive-btn" aria-label="Instagram">I</a>
+            <a href="#" class="social-link responsive-btn" aria-label="YouTube">Y</a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Navegação</h3>
+          <ul class="footer-links">
+            <li><a href="#inicio" class="responsive-link">Início</a></li>
+            <li><a href="#series" class="responsive-link">Séries</a></li>
+            <li><a href="#filmes" class="responsive-link">Filmes</a></li>
+            <li><a href="#lancamentos" class="responsive-link">Novidades</a></li>
+            <li><a href="#categorias" class="responsive-link">Minha Lista</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Suporte</h3>
+          <ul class="footer-links">
+            <li><a href="#" class="responsive-link">FAQ</a></li>
+            <li><a href="#" class="responsive-link">Contato</a></li>
+            <li><a href="#" class="responsive-link">Termos de Uso</a></li>
+            <li><a href="#" class="responsive-link">Privacidade</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Conta</h3>
+          <ul class="footer-links">
+            <li><a href="#" class="responsive-link">Meu Perfil</a></li>
+            <li><a href="#" class="responsive-link">Assinatura</a></li>
+            <li><a href="#" class="responsive-link">Configurações</a></li>
+            <li><a href="#" class="responsive-link">Sair</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Mauricio Nitta Dev. Todos os direitos reservados.
+      </div>
+    </footer>
+
+    <div class="modal" id="movieModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-video">
+            <img
+              src=img\movies\8535b71e1d3caaddf61e86c8ef3d6f81.jpg
+              alt="Trailer"
+            />
+          </div>
+          <button class="close-modal responsive-btn" aria-label="Fechar">
+            ✕
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2 class="modal-title">Destino Interestelar</h2>
+          <div class="modal-meta">
+            <span>2025</span>
+            <span>120 min</span>
+            <span>16+</span>
+            <span>Sci-Fi</span>
+            <span>Aventura</span>
+          </div>
+          <p class="modal-description">
+            Uma equipe de astronautas enfrenta os limites da realidade quando
+            encontra um portal misterioso na órbita de Saturno. Ao atravessarem
+            o portal, eles se deparam com uma dimensão alternativa onde as leis
+            da física são completamente diferentes. Agora, eles precisam
+            encontrar um caminho de volta para casa antes que o portal se feche
+            para sempre.
+          </p>
+          <div class="modal-buttons">
+            <button class="btn btn-primary responsive-btn">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 2L13 8L3 14V2Z" fill="white" />
+              </svg>
+              <span>Assistir</span>
+            </button>
+            <button class="btn btn-secondary responsive-btn">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 2V14M2 8H14"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span>Minha Lista</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/sliders.js"></script>
+    <script src="js/features.js"></script>
+  </body>
+</html>

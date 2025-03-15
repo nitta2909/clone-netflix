@@ -1,0 +1,400 @@
+@media (max-width: 1024px) {
+  :root {
+    --glow-red: 0 0 10px rgba(229, 9, 20, 0.5);
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .trending-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .movies-modern-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px 15px;
+  }
+
+  header.scrolled {
+    padding: 8px 15px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .search-box.active input {
+    width: 150px;
+  }
+
+  .section-title {
+    padding: 10px 15px;
+    font-size: 1.3rem;
+  }
+
+  .hero,
+  .categories,
+  .movies-row,
+  .trending-grid,
+  .episodes-grid,
+  .movies-modern-grid,
+  .footer-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .hero {
+    height: 85vh;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .movie-card {
+    min-width: 160px;
+    height: 240px;
+  }
+
+  .category {
+    min-width: 160px;
+    height: 120px;
+  }
+
+  .episodes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .slider-btn {
+    width: 35px;
+    height: 35px;
+  }
+
+  .movies-modern-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+
+  .recommendations-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .recommendation-filters {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .series-banner {
+    height: 200px;
+  }
+
+  .series-title {
+    font-size: 1.5rem;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+
+  .modal-title {
+    font-size: 1.5rem;
+  }
+
+  .responsive-btn {
+    padding: 8px 16px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+
+  .movie-btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 8px 10px;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .hero {
+    height: 80vh;
+    padding: 0 10px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .movie-card {
+    min-width: 140px;
+    height: 210px;
+  }
+
+  .category {
+    min-width: 140px;
+    height: 100px;
+  }
+
+  .movie-info {
+    transform: translateY(75%);
+  }
+
+  .movie-card:hover .movie-info {
+    transform: translateY(0);
+  }
+
+  .movie-title {
+    font-size: 0.9rem;
+  }
+
+  .movie-meta {
+    font-size: 0.7rem;
+  }
+
+  .movie-description {
+    font-size: 0.8rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .movie-buttons {
+    gap: 5px;
+  }
+
+  .movie-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 0.7rem;
+  }
+
+  .recommendations-title {
+    font-size: 1.2rem;
+  }
+
+  .filter-btn {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+  }
+
+  .episodes-container {
+    margin-top: 0.5rem;
+  }
+
+  .season-selector {
+    gap: 5px;
+  }
+
+  .season-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+
+  .episodes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .episode-title {
+    font-size: 1rem;
+  }
+
+  .episode-meta {
+    font-size: 0.8rem;
+  }
+
+  .trending-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trending-card {
+    height: 250px;
+  }
+
+  .trending-overlay {
+    transform: translateY(60%);
+  }
+
+  .movies-modern-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .modal-body {
+    padding: 15px;
+  }
+
+  .modal-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modal-buttons .btn {
+    width: 100%;
+  }
+
+  .responsive-btn {
+    padding: 6px 12px;
+  }
+
+  .btn {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  .hero-title {
+    font-size: 1.7rem;
+  }
+
+  .movie-card {
+    min-width: 120px;
+    height: 180px;
+  }
+
+  .category {
+    min-width: 120px;
+    height: 90px;
+  }
+
+  .movie-info {
+    transform: translateY(80%);
+  }
+
+  .movie-title {
+    font-size: 0.8rem;
+  }
+
+  .movie-meta span {
+    font-size: 0.7rem;
+  }
+
+  .trending-card {
+    height: 200px;
+  }
+
+  .trending-overlay {
+    transform: translateY(65%);
+  }
+
+  .trending-title {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 4.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.3rem;
+    max-width: 600px;
+  }
+
+  .movie-card {
+    min-width: 230px;
+    height: 345px;
+  }
+
+  .trending-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .movies-modern-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .episodes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: 120px 20px 40px;
+  }
+
+  .hero-content {
+    padding-bottom: 40px;
+  }
+
+  .modal-content {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
